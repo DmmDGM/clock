@@ -74,8 +74,8 @@ namespace Clock {
                 "-nodisp", "-autoexit", "-loglevel", "quiet"
             ];
             if (!muted) {
-                if(process.platform === "win32" && !muted) spawn(path.join(root, "ffmpeg/bin/ffplay.exe"), args);
-                if(process.platform === "linux" && !muted) spawn("ffplay", args);
+                if(process.platform === "win32") spawn(path.join(root, "ffmpeg/bin/ffplay.exe"), args);
+                if(process.platform === "linux") spawn("ffplay", args);
             }
     
             // States
