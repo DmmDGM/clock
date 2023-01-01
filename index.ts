@@ -69,10 +69,14 @@ namespace Clock {
         // Second Loop
         if(lastSecond !== seconds) {
             // Audio
-            if(process.platform === "win32" && !muted) spawn(path.join(root, "ffmpeg/bin/ffplay.exe"), [
+            let args = [
                 path.join(root, "tick.ogg"),
                 "-nodisp", "-autoexit", "-loglevel", "quiet"
-            ]);
+            ];
+            if (!muted) {
+                if(process.platform === "win32") spawn(path.join(root, "ffmpeg/bin/ffplay.exe"), args);
+                if(process.platform === "linux") spawn("ffplay", args);
+            }
     
             // States
             flicker = !flicker;
