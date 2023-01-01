@@ -75,7 +75,7 @@ namespace Clock {
             ];
             if (!muted) {
                 if(process.platform === "win32") spawn(path.join(root, "ffmpeg/bin/ffplay.exe"), args);
-                if(process.platform === "linux") spawn("ffplay", args);
+                if(process.platform === "linux") spawn(path.join(root, "ffmpeg/bin/ffplay"), args);
             }
     
             // States

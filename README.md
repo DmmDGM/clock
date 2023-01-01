@@ -32,7 +32,7 @@ npm start
 
 Press `ctrl + c` to exit the program at any time. I hope you enjoy it!
 
-If you are using Windows, you can also press `M` to turn on the audio.
+If you are using Windows or Linux, you can also press `m` to turn on the audio.
 
 ## Credits
 
