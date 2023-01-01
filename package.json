@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0"
+  },
+  "name": "clock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ."
+  },
+  "keywords": [ "clock" ],
+  "author": "DmmD GM",
+  "license": "MIT",
+  "description": "Clock",
+  "type": "module"
+}
