@@ -62,7 +62,7 @@ namespace Clock {
         let month = now.getMonth();
         let seconds = now.getSeconds();
         let year = now.getFullYear();
-        let [ hoursText, minutesText, secondsText ] = [ hours % 12, now.getMinutes(), seconds ]
+        let [ hoursText, minutesText, secondsText ] = [ (hours % 12) || 12, now.getMinutes(), seconds ]
             .map(time => time.toString().padStart(2, "0").split("").map(number => renderNumber(numberFonts[number as keyof typeof numberFonts])));
         let dateText = `${year} ${months[month]} ${date}, ${day[now.getDay()]}`;
 
