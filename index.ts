@@ -103,7 +103,7 @@ namespace Clock {
         if(month === 0 && date === 1) {
             console.log("\n".repeat(3))
             let specialTexts = [
-                "Happy New Years from DmmD!",
+                "Happy New Year from DmmD!",
                 `Good bye ${year - 1}! Greetings ${year}!`
             ]
             for(let i = 0; i < specialTexts.length; i++)
